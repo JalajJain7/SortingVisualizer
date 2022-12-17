@@ -14,19 +14,23 @@
 
     <hr />
     <div>
-      <button id="init" onClick="init()">New Numbers</button>
-      <!-- <button>Play</button> -->
-      <div class="dropdown">
-        <button class="dropbtn">Sort</button>
-        <div class="dropdown-content">
-          <button id="play1" onClick="play('bubble')">Play Bubble Sort</button>
-          <button id="play2" onClick="play('selection')">
-            Play Selection Sort
-          </button>
+      <div>
+        <button id="init" onClick="init()">New Numbers</button>
+        <!-- <button>Play</button> -->
+        <div class="dropdown">
+          <button class="dropbtn">Sort</button>
+          <div class="dropdown-content">
+            <button id="play1" onClick="play('bubble')">
+              Play Bubble Sort
+            </button>
+            <button id="play2" onClick="play('selection')">
+              Play Selection Sort
+            </button>
+          </div>
         </div>
-      </div>
 
-      <button id="mute" onClick="muteSound()">Un-mute</button>
+        <button id="mute" onClick="muteSound()">Un-mute</button>
+      </div>
 
       <div class="slidecontainer">
         <input

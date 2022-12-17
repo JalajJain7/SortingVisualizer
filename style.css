@@ -18,11 +18,17 @@ body{
     margin: 1px;
 }
 
+.con{
+  align-items: center;
+  align-content: center;
+  width: 100vh;
+}
+
 button{
     background-color: #000000;
     color: white;
     padding: 5px;
-    width: 150px;
+    width: 14vh;
     font-size: 14px;
     border: none;
     margin-top: 5px;

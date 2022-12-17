@@ -1,8 +1,8 @@
-const n = 20;
+var n = 20;
 const arr = [];
-
-init();
 mute = true;
+
+changeNumberValue();
 
 function muteSound() {
   mute = !mute;
@@ -11,6 +11,7 @@ function muteSound() {
 }
 
 function init() {
+  arr.splice(0, arr.length);
   for (let i = 0; i < n; i++) {
     arr[i] = Math.random();
     // arr[i] = arr[i] / 100;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting visualizer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./js/utils/sliderFiles/slider.css"
+  </head>
+  <body>
+    <h1>Sorting visualizer</h1>
+    <div id="container"></div>
+
+    <hr />
+    <div>
+      <button id="init" onClick="init()">Init</button>
+      <!-- <button>Play</button> -->
+      <div class="dropdown">
+        <button class="dropbtn">Sort</button>
+        <div class="dropdown-content">
+          <button id="play1" onClick="play('bubble')">Play Bubble Sort</button>
+          <button id="play2" onClick="play('selection')">
+            Play Selection Sort
+          </button>
+        </div>
+      </div>
+
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./js/Sorts/bubbleSort.js"></script>
+    <script type="text/javascript" src="./js/Sorts/selectionSort.js"></script>
+    <script type="text/javascript" src="./js/utils/sound.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/utils/sliderFiles/slider.js"
+    ></script>
+  </body>
+</html>

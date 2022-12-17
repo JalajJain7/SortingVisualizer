@@ -14,7 +14,7 @@
 
     <hr />
     <div>
-      <button id="init" onClick="init()">Init</button>
+      <button id="init" onClick="init()">New Numbers</button>
       <!-- <button>Play</button> -->
       <div class="dropdown">
         <button class="dropbtn">Sort</button>
@@ -26,12 +26,14 @@
         </div>
       </div>
 
+      <button id="mute" onClick="muteSound()">Un-mute</button>
+
       <div class="slidecontainer">
         <input
           type="range"
-          min="1"
-          max="100"
-          value="50"
+          min="50"
+          max="300"
+          value="100"
           class="slider"
           id="myRange"
         />

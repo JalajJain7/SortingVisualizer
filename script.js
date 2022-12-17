@@ -2,6 +2,13 @@ const n = 20;
 const arr = [];
 
 init();
+mute = true;
+
+function muteSound() {
+  mute = !mute;
+  //   console.log(mute);
+  document.getElementById("mute").innerHTML = mute ? "Un-mute" : "Mute";
+}
 
 function init() {
   for (let i = 0; i < n; i++) {

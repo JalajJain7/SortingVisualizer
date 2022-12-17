@@ -15,7 +15,7 @@ function animateSelectionSort(moves) {
   createBars(move, "selection");
   setTimeout(function () {
     animateSelectionSort(moves);
-  }, 200);
+  }, 250 - slider.value);
 }
 
 function selectionSort(array) {

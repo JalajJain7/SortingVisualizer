@@ -1,6 +1,7 @@
 let audioCtx = null;
 
 function PlayNote(freq) {
+  if (mute) return;
   if (audioCtx === null) {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   }
